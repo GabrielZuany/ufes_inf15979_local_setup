@@ -1,0 +1,5 @@
+CREATE DATABASE db_autos;
+CREATE DATABASE db_f1;
+CREATE DATABASE db_banking;
+CREATE DATABASE db_hackerrank;
+CREATE DATABASE db_silberschatz;
