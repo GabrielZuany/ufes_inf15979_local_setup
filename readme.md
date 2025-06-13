@@ -46,3 +46,7 @@ docker-compose down
 
 - Certifique-se de que as portas necessárias não estejam em uso.
 - Consulte o arquivo `.env` para variáveis de ambiente customizadas.
+
+## License
+
+This project is licensed under the **Educational Use License (EUL)**. Strictly for educational and non-commercial use only. See the [LICENSE](./LICENSE) file for details.
