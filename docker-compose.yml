@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: pgsql_inf15979
+    image: postgres
+    volumes:
+      - ./ddl/create_dbs.sql:/docker-entrypoint-initdb.d/create_dbs.sql
+      - ./ddl/db_hackerrank.sql:/docker-entrypoint-initdb.d/db_hackerrank.sql
+      - ./ddl/db_autos.sql:/docker-entrypoint-initdb.d/db_autos.sql
+      - ./ddl/db_banking.sql:/docker-entrypoint-initdb.d/db_banking.sql
+      - ./ddl/db_f1.sql:/docker-entrypoint-initdb.d/db_f1.sql
+      - ./ddl/db_silberschatz.sql:/docker-entrypoint-initdb.d/db_silberschatz.sql
+    environment:
+      POSTGRES_USER: "aluno"
+      POSTGRES_PASSWORD: "elmasri"
+    ports:
+      - "5432:5432"
